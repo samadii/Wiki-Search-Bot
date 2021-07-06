@@ -11,9 +11,10 @@ from telegram.ext.filters import Filters
 from telegram.update import Update
 
 logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
+
+logger = logging.getLogger(__name__)
 
 import settings
 
