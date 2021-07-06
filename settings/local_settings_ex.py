@@ -1,2 +1,0 @@
-TELEGRAM_TOKEN = ""
-NYTIMES_API = ""
