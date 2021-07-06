@@ -1,5 +1,5 @@
 import logging
-
+import os
 import requests
 from telegram.ext import (
     Updater,
@@ -18,7 +18,8 @@ logger = logging.getLogger(__name__)
 
 import settings
 
-updater = Updater(token=settings.TELEGRAM_TOKEN)
+token = os.environ.get('BOT_TOKEN')
+updater = Updater(token)
 
 
 def start(update: Update, context: CallbackContext):
